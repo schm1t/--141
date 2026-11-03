@@ -29,11 +29,8 @@ int main()
     const double y = 1.7;
     const double z = 0.44;
 
-    const double a = A(x, y, z);
-    const double b = B(a, y, z);
-
-    printf("a = %lf\n", a);
-    printf("b = %lf", b);
+    printf("a = %lf\n", A(x, y, z));
+    printf("b = %lf", B(A(x, y, z), y, z));
 
     return 0;
 }
