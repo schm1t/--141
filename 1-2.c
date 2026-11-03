@@ -15,7 +15,7 @@ int main()
 {
     const double grams;
     printf("Hello! write grams: ");
-    scanf("%lf\n", &grams);
+    scanf("%lf", &grams);
 
     printf("%lf g = %lf oz", grams, toOunces(grams));
 
