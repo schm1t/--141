@@ -25,11 +25,11 @@ double B(const double a, const double y, const double z);
  */
 int main()
 {
-    const double x = -0.5; // переменная x
-    const double y = 1.7;  // переменная y
-    const double z = 0.44; // переменная z
+    const double x = -0.5;
+    const double y = 1.7;
+    const double z = 0.44;
 
-    const double a = A(x, y, z); // a нужна для вычисления b, поэтому считаем её первой
+    const double a = A(x, y, z);
     const double b = B(a, y, z);
 
     printf("a = %lf\n", a);
@@ -40,12 +40,10 @@ int main()
 
 double A(const double x, const double y, const double z)
 {
-    // exp - е в степени, sin - синус, sqrt - корень, fabs - модуль
     return exp(-y * z) * sin(x * z - y) - sqrt(fabs(y * z + x));
 }
 
 double B(const double a, const double y, const double z)
 {
-    // cos - косинус, pow(z, 2) - z в квадрате
     return y * sin(a * pow(z, 2) * cos(2 * z)) - 1;
 }
