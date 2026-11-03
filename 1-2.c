@@ -13,7 +13,9 @@ double toOunces(const double grams);
  */
 int main()
 {
-    const double grams = 100.0;
+    const double grams;
+    printf("Hello! write grams: ");
+    scanf("%lf\n", &grams);
 
     printf("%lf g = %lf oz", grams, toOunces(grams));
 
