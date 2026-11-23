@@ -14,8 +14,8 @@ double work(const double current, const double voltage);
  */
 int main()
 {
-    const double current;
-    const double voltage;
+    const double current = 0;
+    const double voltage = 0;
 
     printf("Hello! Write current: ");
     scanf("%ld", &current);
